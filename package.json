@@ -1,0 +1,17 @@
+{
+  "name": "rss-full-body",
+  "version": "0.0.0",
+  "private": true,
+  "platform": "node",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "ioredis": "^5.3.2"
+  }
+}

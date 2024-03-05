@@ -3,7 +3,7 @@ using Workerd = import "/workerd/workerd.capnp";
 const config :Workerd.Config = (
   services = [
     (name = "main", worker = .mainWorker),
-    (name = "ctx", worker = .ctxWorker),
+   # (name = "ctx", worker = .ctxWorker),
   ],
 
   sockets = [
@@ -27,10 +27,10 @@ const mainWorker :Workerd.Worker = (
   ],
 );
 
-const testWorker :Workerd.Worker = (
-  compatibilityDate = "2022-09-16",
-
-  modules = [
-    ( name = "ctx.js", esModule = embed "ctx.js" ),
-  ],
-);
+#const testWorker :Workerd.Worker = (
+#  compatibilityDate = "2022-09-16",
+#
+#  modules = [
+#    ( name = "ctx.js", esModule = embed "ctx.js" ),
+#  ],
+#);
